@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .container{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #212121;
+      color: #fff;
+      width: 500px;
+      margin-top: 80px;
+    }
+    .form{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+    #guess{
+      margin-left: 30px;
+      font-size: 50px;
+    }
+    .guessField{
+      font-size: 30px;
+      width: 200px;
+      margin-left: 80px;
+    }
+    
+    .guessSubmit{
+      padding: 9px;
+      background-color: rgb(222, 138, 27);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      width: 100px;
+      margin-left: 130px;
+    }
+
+    .box{
+      color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+}
+.container1{
+  backdrop-filter: blur(50px);
+  border: 2px solid rgb(241, 12, 233);
+  padding: 8px 30px;
+}
+.container1 img{
+ width: 30px;
+ margin-left: 40px;
+}
+    body{
+      background: url(asus-logo-background-digital-art-4k-wallpaper-uhdpaper.com-245@0@g.jpg);
+    }
+  </style>
+</head>
+<body>
+      <div class="container">
+        <h1>Number guessing game</h1>
+            <p>Try and guess a random number between 1 and 100.</p>
+            <p>You have 10 attempts to guess the right number.</p>
+            <br>
+        <form class="form">
+            <label for="guessField" id="guess">Guess a number</label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" id="subt" value="Submit guess" class="guessSubmit">
+        </form>
+
+        <div class="resultParas">
+          <p>Previous Guesses: <span class="guesses"></span></p>
+          <p>Guesses Remaining: <span class="lastResult">10</span></p>
+          <p class="lowOrHi"></p>
+        </div>
+      </div>
+      <div class="box">
+          <div class="container1">
+               <h2>Created by Saud 💓 Ansari</h2>
+               <a href="https://www.instagram.com/saud_7667_?igsh=d3c2YzhraGhzdGRl"><i class="ri-instagram-line"><img src="social.png" alt=""></i></a>
+              <a href="https://www.facebook.com/share/SwYoqCwxB6CMPnDx/"><i class="ri-facebook-box-line"><img src="icons8-facebook-48.png" alt=""></i></a>
+              <a href="https://x.com/Saudansari7667?t=z9kfD7Fj1jGp9gsy_5OszQ&s=08"><i class="ri-linkedin-box-line"><img src="icons8-twitterx-50.png" alt=""></i></a></div>
+          </div>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
